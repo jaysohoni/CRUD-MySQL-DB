@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="module" src="functions.js"></script>
+
+
+<head>
+<title> CS230 Assignment 4</title>
+
+
+
+</head>
+
+<body>
+    
+    <div class="outerContainer">
+        <form class="Addrecord" id="Addrecord" method="post"><b>Add a New Record</b> <br>
+        <div class="formColumn">
+            <label for="title">Title:</label><br>
+            <select id="title" name="title">
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Mx">Mx</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr">Dr</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <label for="fname">First name: *</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+
+            <label for="surname">Surname: *</label><br>
+            <input type="text" id="surname" name="surname" required><br>
+
+            <label for="mobile">Mobile Number: *</label><br>
+            <input type="text" id="mobile" name="mobile" required><br>
+
+            <label for="email">Email Address: *</label><br>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div class="formColumn">
+            <label for="haddress1">Home Address Line 1: *</label><br>
+            <input type="text" id="haddress1" name="haddress1" required><br>
+
+            <label for="haddress2">Home Address Line 2:</label><br>
+            <input type="text" id="haddress1" name="haddress1"><br>
+
+            <label for="htown">Home Town: *</label><br>
+            <input type="text" id="htown" name="htown" required><br>
+
+            <label for="hCity">Home County/City: *</label><br>
+            <input type="text" id="hCity" name="hCity" required><br>
+
+            <label for="hEircode">Home Eircode:</label><br>
+            <input type="text" id="hEircode" name="hEircode">
+        </div>
+        <div class="formColumn">
+            <label for="saddress1">Shipping Address Line 1: *</label><br>
+            <input type="text" id="saddress1" name="saddress1" required><br>
+
+            <label for="saddress2">Shipping Address Line 2:</label><br>
+            <input type="text" id="saddress1" name="saddress1"><br>
+
+            <label for="stown">Shipping Town: *</label><br>
+            <input type="text" id="stown" name="stown" required><br>
+
+            <label for="sCity">Shipping County/City: *</label><br>
+            <input type="text" id="sCity" name="sCity" required><br>
+
+            <label for="sEircode">Shipping Eircode:</label><br>
+            <input type="text" id="sEircode" name="sEircode"><br>
+        
+        <button id="createSubmit" class="button">Create</button>
+        </div>
+        </form>
+    </div>
+    
+<br><br>
+<br><br>
+
+<br><br>
+<br><br>
+
+<br><br>
+<br><br>
+
+<br><br>
+<br><br>
+<hr>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<div class="outerContainer">
+<div class="formColumn">
+    <form class="deleteRecord"  id="deleterecord" method="post"><b>Delete a Record</b> <br>
+        <label for="dName">(First) Name: *</label><br>
+        <input type="text" id="dName" name="dName" required><br>
+
+        <label for="dMobileNumber">Mobile Number: *</label><br>
+        <input type="text" id="dMobileNumber" name="dMobileNumber" required><br>
+
+        <label for="dEmailAddress">Email Address: *</label><br>
+        <input type="text" id="dEmailAddress" name="dEmailAddress" required><br>
+        <button id="deleteSubmit" class="button">Delete</button>
+    </form>
+</div>
+<div class="formColumn">
+<form class="searchRecord"  id="searchRecord" method="post"><b>Search for a record</b> <br>
+    <label for="searchName">(First) Name: *</label><br>
+    <input type="text" id="searchName" name="searchName" required> 
+    <button id="searchSubmit" class="button">Search</button>
+</form>
+</div>
+</div>
+<br><br>
+<br><br>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<hr>
+
+<br><br>
+<br><br>
+<div class="outerContainer">
+    <form class="Updaterecord" id="Updaterecord" method="post"><b>Update a Record</b> <br>
+    <div class="formColumn">
+        <label for="id">Type the ID of the record which you want to update: *</label><br>
+        <input type="text" id="id" name="id" required><br><br>
+
+        <label for="title">Title:</label><br>
+        <select id="title" name="title">
+            <option value="Mr">Mr</option>
+            <option value="Ms">Ms</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Mx">Mx</option>
+            <option value="Miss">Miss</option>
+            <option value="Dr">Dr</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="text" id="mobile" name="mobile"><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="text" id="email" name="email">
+    </div>
+    <div class="formColumn">
+        <label for="haddress1">Home Address Line 1:</label><br>
+        <input type="text" id="haddress1" name="haddress1"><br>
+
+        <label for="haddress2">Home Address Line 2:</label><br>
+        <input type="text" id="haddress1" name="haddress1"><br>
+
+        <label for="htown">Home Town:</label><br>
+        <input type="text" id="htown" name="htown"><br>
+
+        <label for="hCity">Home County/City:</label><br>
+        <input type="text" id="hCity" name="hCity"><br>
+
+        <label for="hEircode">Home Eircode:</label><br>
+        <input type="text" id="hEircode" name="hEircode">
+    </div>
+    <div class="formColumn">
+        <label for="saddress1">Shipping Address Line 1:</label><br>
+        <input type="text" id="saddress1" name="saddress1"><br>
+
+        <label for="saddress2">Shipping Address Line 2:</label><br>
+        <input type="text" id="saddress1" name="saddress1"><br>
+
+        <label for="stown">Shipping Town:</label><br>
+        <input type="text" id="stown" name="stown"><br>
+
+        <label for="sCity">Shipping County/City:</label><br>
+        <input type="text" id="sCity" name="sCity"><br>
+
+        <label for="sEircode">Shipping Eircode:</label><br>
+        <input type="text" id="sEircode" name="sEircode"><br>
+    
+    <button id="updateSubmit" class="button">Update</button>
+    </div>
+    </form>
+</div>
+<div>
+
+</body></html>

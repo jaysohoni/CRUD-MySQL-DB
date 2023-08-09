@@ -1,0 +1,25 @@
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  .button {
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .Deleterecord{
+
+    align-items: right;
+
+  }
+
+  .formColumn {
+    float: left;
+    width: 20%;
+  }
